@@ -1,0 +1,18 @@
+{
+  "extensionName": {
+    "message": "Tabments",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "Manage tabs with groups in a list view.",
+    "description": "Description of the extension."
+  },
+  "defaultGroupName": {
+    "message": "New Group",
+    "description": "Default name for new groups."
+  },
+  "newGroup": {
+    "message": "Create New Group",
+    "description": "Text for creating new group."
+  }
+}

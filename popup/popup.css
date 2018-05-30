@@ -1,0 +1,116 @@
+/**
+ * @author Esphas Kueen <esphas@hotmail.com>
+ * @license ISC
+ */
+
+ html, body {
+  width: 260px;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  white-space: nowrap;
+}
+
+body {
+  margin-right: -17px !important;
+  overflow-y: scroll;
+}
+
+.tabments {
+  margin: 10px;
+}
+
+.toggleable__controller {
+  display: flex;
+}
+
+.control-toggle > img {
+  transition: transform 50ms linear;
+}
+
+:not(.groups--dragging) >
+.toggleable--toggled > .toggleable__controller > .control-toggle > img {
+  transform: rotate(90deg);
+}
+
+.toggleable__list {
+  height: 0;
+  overflow: hidden;
+}
+
+:not(.groups--dragging) >
+.toggleable--toggled > .toggleable__list {
+  height: auto;
+}
+
+.group {
+  display: flex;
+  background-color: floralwhite;
+}
+
+.group__name {
+  flex-grow: 1;
+}
+
+.tab {
+  display: flex;
+  padding-left: 24px;
+}
+
+.tab__favicon {
+  margin: auto;
+}
+
+.tab__name {
+  flex-grow: 1;
+}
+
+.tab__controls {
+  margin: auto;
+  align-self: flex-end;
+}
+
+.clickable {
+  display: flex;
+  height: 32px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.clickable:hover {
+  background-color: aliceblue;
+}
+
+.control:hover > img {
+  background-color: antiquewhite;
+}
+
+.icon {
+  padding: 2px;
+  margin: 2px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: auto;
+  overflow: hidden;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+[contenteditable="true"].title {
+  background-color: antiquewhite;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+.dragged {
+  display: none;
+}
