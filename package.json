@@ -2,10 +2,12 @@
   "name": "tabments",
   "version": "0.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:firefox": "web-ext run --source-dir ./extension-dist/",
+    "build": "web-ext build --overwrite-dest"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
-    "eslint-config-google": "^0.9.1"
+    "eslint-config-google": "^0.9.1",
+    "web-ext": "^2.7.0"
   }
 }
